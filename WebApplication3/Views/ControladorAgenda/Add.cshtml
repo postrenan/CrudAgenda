@@ -1,0 +1,40 @@
+﻿@model  WebApplication3.Models.AddAgendaViewModel
+    
+@{
+}
+<h1>Add atividade</h1>
+<form method="post" action="Add">
+  <div class="mb-3">
+    <label for="" class="form-label">Responsavel</label>
+    <input type="text" class="form-control" asp-for="Responsavel">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Atividade</label>
+    <input type="text" class="form-control" asp-for="Titulo">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Data inicial</label>
+    <input type="date" class="form-control" asp-for="Data_inicial">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Data Prazo</label>
+    <input type="date" class="form-control" asp-for="Prazo">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Data de conclusão</label>
+    <input type="date" class="form-control" asp-for="data_conclusão">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Responsavel</label>
+    <input type="text" class="form-control" asp-for="Responsavel">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Descrição</label>
+    <input type="text" class="form-control" asp-for="Descrição">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Status</label>
+    <input type="checkbox" class="form-control" asp-for="Status">
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
